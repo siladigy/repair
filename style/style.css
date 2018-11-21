@@ -412,7 +412,7 @@ template {
 
 .header-text__city {
   display: block;
-  font-style: 13px;
+  font-size: 13px;
   margin-bottom: 9px;
   font-family: 'Museo Sans Light', sans-serif;
 }
