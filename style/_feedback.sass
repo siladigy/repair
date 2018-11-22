@@ -16,8 +16,43 @@
         margin-bottom: 30px
         &:first-child
             margin-right: 30px
+        &:focus
+            outline: none
     &__button
         padding: 28px
         display: block
         width: 100%
         font-size: 16px 
+        margin-bottom: 32px
+    &__subscription
+        display: flex
+        align-items: center
+        &-text
+            line-height: 24px
+            font-size: 15px
+            color: $text-color
+            max-width: 230px
+            &:first-child
+                margin-right: 78px
+        &-call
+            max-width: 251px
+            font-size: 15px
+            line-height: 24px
+            display: flex
+            align-items: center
+            &:before
+                content: ''
+                background-image: url('../img/feedback/phone.png')
+                min-width: 40px
+                height: 40px
+                border-radius: 50%
+                border: 2px solid #cccccc
+                background-size: 16px
+                background-repeat: no-repeat
+                background-position: center
+                margin-right: 20px
+        &-tel
+            +bold
+            text-decoration: none
+            color: $text-color
+            

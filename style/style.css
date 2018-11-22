@@ -541,11 +541,67 @@ template {
   margin-right: 30px;
 }
 
+.form__input:focus {
+  outline: none;
+}
+
 .form__button {
   padding: 28px;
   display: block;
   width: 100%;
   font-size: 16px;
+  margin-bottom: 32px;
+}
+
+.form__subscription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__subscription-text {
+  line-height: 24px;
+  font-size: 15px;
+  color: #333333;
+  max-width: 230px;
+}
+
+.form__subscription-text:first-child {
+  margin-right: 78px;
+}
+
+.form__subscription-call {
+  max-width: 251px;
+  font-size: 15px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__subscription-call:before {
+  content: '';
+  background-image: url("../img/feedback/phone.png");
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+}
+
+.form__subscription-tel {
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-decoration: none;
+  color: #333333;
 }
 
 *, *:after, *:before {
