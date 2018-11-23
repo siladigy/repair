@@ -1,0 +1,74 @@
+@media (max-width: 1199px)
+    .container
+        width: 970px
+
+@media (max-width: 992px)
+    .container
+        width: 767px
+    .main
+        &-text
+            &__title
+                font-size: 30px
+                line-height: 36px
+    .feedback
+        background: #fff
+@media (max-width: 795px)
+    .container
+        width: 95%
+    .header-text
+        &__phone
+            font-size: 18px
+    .main
+        &-wrap
+            flex-direction: column
+        &-text
+            max-width: 400px
+            margin: auto
+            &__title
+                text-align: center
+    .form
+        margin: auto
+        &__title
+            max-width: 500px
+            margin: auto
+            text-align: center
+            margin-bottom: 20px
+        &__subtitle
+            margin: auto
+            text-align: center
+            margin-bottom: 20px
+        
+@media (max-width: 620px)
+    .xs
+        display: none
+    .header-text
+        &__phone
+            font-size: 15px
+    .button-xs
+        background-color: $primary-color
+        background-image: url('../img/phone.svg')
+        min-width: 60px
+        height: 60px
+        padding: 0
+        background-repeat: no-repeat
+        background-position: center
+    .form
+        &__title
+            font-size: 18px
+        &__subtitle
+            font-size: 14px
+        &__input
+            width: 95%
+        &__subscription
+            display: block
+            &-text
+                max-width: 100%
+                font-size: 12px
+            &-call
+                max-width: 100%
+                &:before
+                    display: none
+                
+            
+
+        

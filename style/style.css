@@ -513,7 +513,21 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback bg.jpg") no-repeat center right -40%;
+  background: url("../img/feedback/feedback bg.jpg") no-repeat center left 700px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form {
@@ -621,5 +635,100 @@ body {
 
 img {
   max-width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #fff;
+  }
+}
+
+@media (max-width: 795px) {
+  .container {
+    width: 95%;
+  }
+  .header-text__phone {
+    font-size: 18px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+  .form {
+    margin: auto;
+  }
+  .form__title {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .form__subtitle {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .xs {
+    display: none;
+  }
+  .header-text__phone {
+    font-size: 15px;
+  }
+  .button-xs {
+    background-color: #ffd200;
+    background-image: url("../img/phone.svg");
+    min-width: 60px;
+    height: 60px;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .form__title {
+    font-size: 18px;
+  }
+  .form__subtitle {
+    font-size: 14px;
+  }
+  .form__input {
+    width: 95%;
+  }
+  .form__subscription {
+    display: block;
+  }
+  .form__subscription-text {
+    max-width: 100%;
+    font-size: 12px;
+  }
+  .form__subscription-call {
+    max-width: 100%;
+  }
+  .form__subscription-call:before {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
