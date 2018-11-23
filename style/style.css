@@ -696,13 +696,16 @@ img {
   .xs {
     display: none;
   }
+  .header-text__contacts {
+    margin-right: 10px;
+  }
   .header-text__phone {
     font-size: 15px;
   }
   .button-xs {
     background-color: #ffd200;
     background-image: url("../img/phone.svg");
-    min-width: 60px;
+    min-width: 50px;
     height: 60px;
     padding: 0;
     background-repeat: no-repeat;
@@ -719,10 +722,11 @@ img {
   }
   .form__subscription {
     display: block;
+    text-align: left;
   }
   .form__subscription-text {
     max-width: 100%;
-    font-size: 12px;
+    font-size: 15px;
   }
   .form__subscription-call {
     max-width: 100%;
