@@ -1127,14 +1127,14 @@ li:before {
   }
   .modal__close {
     position: absolute;
-    top: 145px;
+    top: -70px;
     right: 15px;
   }
   .modal-img {
     display: none;
   }
   input {
-    width: 220px;
+    max-width: 220px;
     padding: 8px;
     font-size: 10px;
     line-height: 12px;
