@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
     <title>Ремонт квартир</title>
 </head>
 <body>
@@ -20,7 +22,7 @@
                 <a class='header-text__phone' href="tel:+74954225131">+7 (495) 42-251-31</a>
              </div>
              <div class="header-text__button">
-                 <button class="button button-xs"><span class="xs">Перезвоните мне</span></button>
+                 <button class="button button-xs" id='button-callback'><span class="xs">Перезвоните мне</span></button>
              </div>
          </div>
      </div>
@@ -94,5 +96,93 @@
         </div>
      </div>
  </section>
- </body>
+
+ <div class="modal modal_hidden" id="modal-callback">
+     <div class="modal__dialog">
+         <div class="modal__close">&#10006;</div>
+        <div class="modal__dialog-items">
+            <div class="modal_wrap">
+            <div class="modal__dialog-items_img">
+                <div class="modal__dialog-items_img-img">
+                    <img src="img/modal/first.png" alt="" class='modal-img'>
+                </div>
+                <div class="modal__dialog-items_img-text">
+                    <div class="modal__dialog-items_img-text-title">
+                        Ванная комната
+                    </div>
+                    <hr class='modal-hr' align="left">
+                    <div class="modal__dialog-items_img-text-price">
+                        135*150 - <span class="modal-bold">31 000 руб.</span> <br>
+                        170*170 - <span class="modal-bold">43 000 руб.</span>
+                    </div>
+                </div>
+                </div>
+                <div class="modal__dialog-items_img">
+                        <div class="modal__dialog-items_img-img">
+                            <img src="img/modal/second.png" alt="" class='modal-img'>
+                        </div>
+                        <div class="modal__dialog-items_img-text">
+                            <div class="modal__dialog-items_img-text-title">
+                                Туалет
+                            </div>
+                            <hr class='modal-hr' align="left">
+                            <div class="modal__dialog-items_img-text-price">
+                                135*70 - <span class="modal-bold">14 000 руб.</span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="modal__dialog-items_img">
+                                <div class="modal__dialog-items_img-img">
+                                    <img src="img/modal/third.png" alt="" class='modal-img'>
+                                </div>
+                                <div class="modal__dialog-items_img-text">
+                                    <div class="modal__dialog-items_img-text-title">
+                                        Совмещенный санузел
+                                    </div>
+                                    <hr class='modal-hr' align="left">
+                                    <div class="modal__dialog-items_img-text-price">
+                                        170*210 - <span class="modal-bold">54 000 руб.</span> 
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                <div class="modal__dialog-list">
+                    <div class="modal__dialog-list_title">
+                        В стоимость работ входит
+                    </div>
+                    <div class="modal__dialog-list_text">
+                        <ul>
+                            <li>Демонтаж старого покрытия стен и пола</li>
+                            <li>Выравнивание стен гипсовыми составами</li>
+                            <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                            <li>Монтаж кафельной плитки на полу и стенах</li>
+                            <li>Установка реечного или натяжного потолка, светильников</li>
+                            <li>Монтаж двери с коробкой</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="modal__dialog-form">
+            <div class="modal__dialog-form_title">
+                Узнайте точную стоимость <br> ремонта по телефону!
+            </div>
+            <div class="modal__dialog-form_subtitle">
+                Заполните поля ниже - мы свяжемся с Вами
+            </div>
+            <form action="" class='modal-form'>
+                <input type="text" placeholder="Ваше имя"> <br>
+                <input type="text" placeholder="Ваш телефон"><br>
+                <input type="submit" value="Узнать стоимость" class='button modal-button'>
+            </form>
+            <div class="modal__dialog-form_subscription">
+                Или Вы можете перезвонить нам сами <br> по телефону:
+            </div>
+            <div class="modal__dialog-form_phone">
+                <a href="tel:+78182425131" class='modal-phone'>+7 (8182) 42-51-31</a>
+            </div>
+        </div>
+     </div>
+ </div>
+
+</body>
 </html>

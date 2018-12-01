@@ -1,0 +1,309 @@
+.modal
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: rgba(#000, 0.52)
+    left: 0
+    top: 0
+    z-index: 99
+    display: none
+    &_visible
+        display: flex
+    &__dialog
+        margin: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 674px
+        position: relative
+        &-items
+            background-color: #f7f7f7
+            height: 100%
+            padding-top: 40px
+            padding-left: 70px
+            padding-right: 103px
+            padding-bottom: 45px
+            &_img
+                display: flex
+                margin-bottom: 15px
+                align-items: center
+                &-img
+                    min-width: 120
+                    min-height: 85
+                    margin-right: 28px
+                &-text
+                    &-title
+                        font-size: 16px
+                        font-weight: 400
+                        +medium
+                    &-price
+                        font-size: 16px
+                        font-weight: 400
+        &-list
+            margin-top: 50px
+            &_title
+                font-size: 14px
+                font-weight: 400
+                +bold
+            &_text
+                margin-top: 28px
+                font-size: 14px
+                font-weight: 400
+                +light
+                line-height: 25px
+        &-form
+            background-color: #fff
+            height: 100%
+            padding-left: 90px
+            padding-right: 90px
+            padding-top: 40px
+            padding-bottom: 46px
+            text-align: center
+            &_title
+                font-size: 22px
+                font-weight: 400
+                line-height: 33px
+                +bold
+                color: #333333
+            &_subtitle
+                margin-top: 52px
+                font-size: 16px
+                font-weight: 400
+            &_subscription
+                margin-top: 33px
+                font-size: 15px
+                font-weight: 400
+            &_phone
+                margin-top: 15px
+                font-size: 24px
+                font-weight: 400
+                +bold
+    &-form
+        margin-top: 53px
+    &__wrap
+        display: flex
+        flex-direction: column
+    &-phone
+        color: #000000
+        text-decoration: none
+    &-hr
+        width: 42px
+        height: 2px
+        background-color: $primary-color
+        border: none
+    &__close
+        position: absolute
+        top: 15px
+        right: 15px
+        cursor: pointer
+    &-button
+        font-size: 16px
+    &-bold
+        +bold
+input
+    width: 370px
+    padding: 24px
+    border: 1px solid #dddddd
+    border-radius: 10px
+    font-size: 16px
+    line-height: 24px
+    &:first-child
+        margin-bottom: 15px
+    &:focus
+        outline: none
+    &:last-child
+        margin-top: 30px
+li
+  list-style: none
+  &:before
+      content: "•"
+      color: $primary-color
+      display: inline-block 
+      width: 3em
+      margin-left: -2em
+
+@media (max-width: 1200px)
+    .modal
+        &__dialog
+            height: 550px
+            &-items
+                padding-top: 30px
+                padding-left: 50px
+                padding-right: 60px
+                padding-bottom: 30px
+                &_img
+                    margin-bottom: 13px
+                    &-img
+                        margin-right: 15px
+                    &-text
+                        &-title
+                            font-size: 14px
+                        &-price
+                            font-size: 14px
+            &-list
+                margin-top: 15px
+                &_title
+                    font-size: 14px
+                &_text
+                    margin-top: 15px
+                    font-size: 12px
+                    line-height: 17px
+            &-form
+                padding-left: 50px
+                padding-right: 60px
+                padding-top: 30px
+                padding-bottom: 36px
+                &_title
+                    font-size: 20px
+                    line-height: 25px
+                &_subtitle
+                    margin-top: 30px
+                    font-size: 14px
+                &_subscription
+                    margin-top: 25px
+                    font-size: 15px
+                &_phone
+                    margin-top: 15px
+                    font-size: 22px
+        &-button
+            font-size: 15px
+    input
+        width: 320px
+        padding: 15px
+        font-size: 14px
+        &:first-child
+            margin-bottom: 15px
+        &:last-child
+            margin-top: 30px
+
+@media (max-width: 990px)
+    .modal
+        &__dialog
+            height: 420px
+            justify-content: center
+            &-items
+                padding-top: 20px
+                padding-left: 40px
+                padding-right: 50px
+                padding-bottom: 20px
+                &_img
+                    margin-bottom: 13px
+                    &-img
+                        margin-right: 15px
+                    &-text
+                        &-title
+                            font-size: 12px
+                        &-price
+                            font-size: 12px
+            &-list
+                margin-top: 15px
+                &_title
+                    font-size: 12px
+                &_text
+                    margin-top: 10px
+                    font-size: 10px
+                    line-height: 13px
+            &-form
+                padding-left: 40px
+                padding-right: 50px
+                padding-top: 20px
+                padding-bottom: 26px
+                &_title
+                    font-size: 15px
+                    line-height: 20px
+                &_subtitle
+                    margin-top: 20px
+                    font-size: 12px
+                &_subscription
+                    margin-top: 20px
+                    font-size: 12px
+                &_phone
+                    margin-top: 10px
+                    font-size: 17px
+        &-form
+            margin-top: 15px
+        &-button
+            font-size: 12px
+        &-img
+            width: 100px
+            height: 65px
+    input
+        width: 280px
+        padding: 12px
+        font-size: 12px
+        &:first-child
+            margin-bottom: 10px
+        &:last-child
+            margin-top: 20px
+@media (max-width: 768px)
+    .modal
+        &__dialog
+            height: 350px
+            justify-content: center
+            &-items
+                padding-top: 20px
+                padding-left: 30px
+                padding-right: 30px
+                padding-bottom: 20px
+                &_img
+                    margin-bottom: 13px
+                    &-img
+                        margin-right: 15px
+                    &-text
+                        &-title
+                            font-size: 10px
+                        &-price
+                            font-size: 10px
+            &-list
+                margin-top: 15px
+                &_title
+                    font-size: 10px
+                &_text
+                    margin-top: 10px
+                    font-size: 8px
+                    line-height: 10px
+            &-form
+                padding-left: 30px
+                padding-right: 30px
+                padding-top: 20px
+                padding-bottom: 26px
+                &_title
+                    font-size: 12px
+                    line-height: 15px
+                &_subtitle
+                    margin-top: 15px
+                    font-size: 10px
+                &_subscription
+                    margin-top: 15px
+                    font-size: 10px
+                &_phone
+                    margin-top: 10px
+                    font-size: 13px
+        &-form
+            margin-top: 10px
+        &-button
+            font-size: 10px
+            padding: 8px
+        &-img
+            width: 80px
+            height: 55px
+    input
+        width: 220px
+        padding: 8px
+        font-size: 10px
+        &:first-child
+            margin-bottom: 10px
+        &:last-child
+            margin-top: 15px
+@media (max-width: 576px)
+    .modal
+        &__dialog
+            max-height: 100vh
+            overflow-y: auto
+            justify-content: center
+            flex-direction: column
+            &-items
+                display: none
+            &-form
+                margin-bottom: 20px    
+                
