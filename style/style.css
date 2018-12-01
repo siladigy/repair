@@ -1052,21 +1052,98 @@ li:before {
 
 @media (max-width: 576px) {
   .modal__dialog {
-    max-height: 100vh;
-    overflow-y: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   .modal__dialog-items {
-    display: none;
+    padding-top: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 2px;
+  }
+  .modal__dialog-items_img {
+    margin-bottom: 13px;
+  }
+  .modal__dialog-items_img-img {
+    margin-right: 15px;
+  }
+  .modal__dialog-items_img-text-title {
+    font-size: 10px;
+  }
+  .modal__dialog-items_img-text-price {
+    font-size: 10px;
+  }
+  .modal__dialog-list {
+    margin-top: 15px;
+  }
+  .modal__dialog-list_title {
+    font-size: 10px;
+  }
+  .modal__dialog-list_text {
+    margin-top: 10px;
+    font-size: 8px;
+    line-height: 10px;
   }
   .modal__dialog-form {
-    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  .modal__dialog-form_title {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .modal__dialog-form_subtitle {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .modal__dialog-form_subscription {
+    margin-top: 15px;
+    font-size: 10px;
+  }
+  .modal__dialog-form_phone {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .modal-form {
+    margin-top: 10px;
+  }
+  .modal__wrap {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .modal-button {
+    font-size: 10px;
+    padding: 8px;
+  }
+  .modal__close {
+    position: absolute;
+    top: 145px;
+    right: 15px;
+  }
+  .modal-img {
+    display: none;
+  }
+  input {
+    width: 220px;
+    padding: 8px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  input:first-child {
+    margin-bottom: 10px;
+  }
+  input:last-child {
+    margin-top: 15px;
   }
 }
 
