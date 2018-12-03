@@ -1147,6 +1147,56 @@ li:before {
   }
 }
 
+.portfolio {
+  background-color: #f5f5f5;
+  padding: 100px 0 168px 0;
+  background-image: url(../img/portfolio/portfolio-bg.png);
+  background-position: left;
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  margin-top: 100px;
+}
+
+.slider__item {
+  text-align: center;
+}
+
+.slider__item:focus {
+  outline: none;
+}
+
+.slider__item img {
+  margin: auto;
+}
+
+.arrow {
+  width: 45px;
+  height: 19px;
+  cursor: pointer;
+  position: absolute;
+  bottom: -68px;
+}
+
+.arrow_right {
+  left: 50%;
+  background: url("../img/arrow-right.png") no-repeat center;
+  background-size: 100%;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.arrow_left {
+  left: 50%;
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  margin-left: -15px;
+  background: url("../img/arrow-left.png") no-repeat center;
+  background-size: 100%;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1166,9 +1216,21 @@ img {
   max-width: 100%;
 }
 
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 45px;
+}
+
+.section-title_center {
+  text-align: center;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 970px;
+  }
+  .slider__item img {
+    max-width: 95%;
   }
 }
 
@@ -1182,6 +1244,13 @@ img {
   }
   .feedback {
     background: #fff;
+  }
+  .slider {
+    margin-top: 70px;
+  }
+  .section-title {
+    font-size: 18px;
+    line-height: 35px;
   }
 }
 
@@ -1218,6 +1287,13 @@ img {
     margin: auto;
     text-align: center;
     margin-bottom: 20px;
+  }
+  .slider {
+    margin-top: 60px;
+  }
+  .section-title {
+    font-size: 18px;
+    line-height: 35px;
   }
 }
 
@@ -1262,6 +1338,17 @@ img {
   }
   .form__subscription-call:before {
     display: none;
+  }
+  .slider {
+    margin-top: 50px;
+  }
+  .slider img {
+    width: 80%;
+    height: 80%;
+  }
+  .section-title {
+    font-size: 16px;
+    line-height: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */
