@@ -79,7 +79,7 @@
          <span class='form__subtitle'>Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
          <form action="#">
              <input type="text" class="input input-name form__input" placeholder="Ваше имя">
-             <input type="tel" class="input input-tel form__input" placeholder="Ваш телефон" pattern="[+]7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}">
+             <input type="tel" class="input input-tel form__input" placeholder="Ваш телефон" >
              <button type="submit" class='button form__button'>Получить бесплатный дизайн-проект</button>
          </form>
          <div class="form__subscription">
@@ -153,12 +153,12 @@
                     </div>
                     <div class="modal__dialog-list_text">
                         <ul>
-                            <li>Демонтаж старого покрытия стен и пола</li>
-                            <li>Выравнивание стен гипсовыми составами</li>
-                            <li>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
-                            <li>Монтаж кафельной плитки на полу и стенах</li>
-                            <li>Установка реечного или натяжного потолка, светильников</li>
-                            <li>Монтаж двери с коробкой</li>
+                            <li class='modal-list'>Демонтаж старого покрытия стен и пола</li>
+                            <li class='modal-list'>Выравнивание стен гипсовыми составами</li>
+                            <li class='modal-list'>Грунтовка стен и пола антисептиком, бетоноконтактом</li>
+                            <li class='modal-list'>Монтаж кафельной плитки на полу и стенах</li>
+                            <li class='modal-list'>Установка реечного или натяжного потолка, светильников</li>
+                            <li class='modal-list'>Монтаж двери с коробкой</li>
                         </ul>
                     </div>
                 </div>
@@ -170,9 +170,9 @@
             <div class="modal__dialog-form_subtitle">
                 Заполните поля ниже - мы свяжемся с Вами
             </div>
-            <form action="" class='modal-form'>
+            <form action="#" class='modal-form'>
                 <input type="text" placeholder="Ваше имя"><br>
-                <input type="text" placeholder="Ваш телефон"><br>
+                <input type="tel" placeholder="Ваш телефон"><br>
                 <input type="submit" value="Узнать стоимость" class='button modal-button'>
             </form>
             <div class="modal__dialog-form_subscription">
@@ -214,6 +214,50 @@
 </section>  
 
 <script src="slick.min.js"></script>
+
+<section class="request">
+    <div class="container">
+        <div class="request-wrap">
+        <div class="request-wrap-text">
+            <div class="request-wrap-text_title">
+                Мы можем озвучить Вам примерную стоимость 
+                работы и материалов по телефону
+            </div>
+            <div class="request-wrap-text_subtitle">
+                Для этого нужно ответить на 4 вопроса:
+            </div>
+            <div class="request-wrap-text_list">
+                <ol class='list'>
+                    <li class='request__item'>Какова площадь помещения?</li>
+                    <li class='request__item'>У Вас новостройка или вторичное жилье?</li>
+                    <li class='request__item'>Где находится помещение, в котором будет 
+                        производиться ремонт?</li>
+                    <li class='request__item'>Назначение помещения?</li>
+                </ol>
+            </div>
+        </div>
+        <div class="request-wrap-form">
+            <div class="request-wrap-form_title">
+                Оставьте заявку на бесплатный 
+                расчет ремонта по телефону
+            </div>
+            <div class="request-wrap-form_subtitle">
+                Для этого заполните форму ниже
+            </div>
+            <div class="request-wrap-form_input">
+                <form action="mailer/smart.php" method="POST" class="ajax-submit">
+                    <input type="text" name='user_name' placeholder="Ваше имя" class='request-form'><br>
+                    <input type="tel" name='user_phone' placeholder="Ваш телефон" class='request-form'><br> 
+                    <button type="submit" class='button request-form'>Рассчитать стоимость</button>
+                </form>
+            </div>
+            <div class="request-wrap-form_subscription">
+                Мы перезвоним Вам в течение 60 секунд
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>

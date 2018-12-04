@@ -38,4 +38,19 @@ $(document).ready(function(){
         },
     ]
   });
+
+  $('.ajax-submit').submit(function(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        alert("Сообщение успешно отправлено");
+        $(".ajax-submit").trigger("reset");
+    });
+    return false;
+});
+
 });
