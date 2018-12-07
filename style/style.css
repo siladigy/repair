@@ -1560,6 +1560,10 @@ img {
   .container {
     width: 970px;
   }
+  .main-pic {
+    -webkit-transform: none;
+            transform: none;
+  }
   .slider__item img {
     max-width: 95%;
   }
@@ -1804,9 +1808,9 @@ img {
     padding: 50px 0;
   }
   .block-text {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
-    min-width: 307px;
+    min-width: 207px;
   }
   .request-wrap {
     -webkit-box-orient: vertical;
