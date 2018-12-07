@@ -4,7 +4,11 @@
     .slider
         &__item
             img
-                max-width: 95%            
+                max-width: 95%  
+    .count
+        &-item
+            &:before
+                left: -60px          
     .request
         padding-top: 70px
     .request-wrap
@@ -34,6 +38,17 @@
         &-title
             font-size: 18px
             line-height: 35px
+    .count
+        &-wrap
+            flex-wrap: wrap
+        &-item
+            margin-bottom: 30px
+            &:before
+                display: none
+    .block-text
+        font-size: 25px
+        line-height: 40px
+        min-width: 707px
     .request
         padding-top: 50px
     .request-wrap
@@ -99,6 +114,12 @@
         &-title
             font-size: 18px
             line-height: 35px
+    .title-block
+        padding: 70px 0
+    .block-text
+        font-size: 20px
+        line-height: 30px
+        min-width: 507px
     .request-wrap
         &-text
             padding-right: 60px
@@ -165,7 +186,13 @@
     .section
         &-title
             font-size: 16px
-            line-height: 25px       
+            line-height: 25px
+    .title-block
+        padding: 50px 0 
+    .block-text
+        font-size: 20px
+        line-height: 20px
+        min-width: 307px      
     .request-wrap
         flex-direction: column
         &-text

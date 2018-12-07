@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="wow.min.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style/slick.css">
     <title>Ремонт квартир</title>
@@ -41,7 +43,7 @@
                     <div class="main-advantages__item">
                         <div class="main-advantages__img main-advantages__img-1">
                         </div>
-                        <div class="main-advantages__text">
+                        <div class="main-advantages__text wow bounceInRight" data-wow-delay='0.4s'>
                             Точно соблюдаем сроки
                         </div>
                     </div>
@@ -49,7 +51,7 @@
                     <div class="main-advantages__item">
                         <div class="main-advantages__img main-advantages__img-2">
                         </div>
-                        <div class="main-advantages__text">
+                        <div class="main-advantages__text wow bounceInRight" data-wow-delay='0.8s'>
                             Рассчитаем смету на работы
                             и материалы в день обращения
                         </div>
@@ -58,7 +60,7 @@
                     <div class="main-advantages__item">
                         <div class="main-advantages__img main-advantages__img-3">
                         </div>
-                        <div class="main-advantages__text">
+                        <div class="main-advantages__text wow bounceInUp" data-wow-delay='1.2s'>
                             Предложим более 100 вариантов 
                             исполнения дизайна Вашего жилья
                         </div>
@@ -78,8 +80,8 @@
          <h2 class='form__title'>Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
          <span class='form__subtitle'>Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
          <form action="#">
-             <input type="text" class="input input-name form__input" placeholder="Ваше имя">
-             <input type="tel" class="input input-tel form__input" placeholder="Ваш телефон" >
+             <input type="text" class="input input-name form__input wow rollIn" placeholder="Ваше имя">
+             <input type="tel" data-wow-delay="0.5s" class="input input-tel form__input wow rollIn" placeholder="Ваш телефон" >
              <button type="submit" class='button form__button'>Получить бесплатный дизайн-проект</button>
          </form>
          <div class="form__subscription">
@@ -173,7 +175,7 @@
             <form action="#" class='modal-form'>
                 <input type="text" placeholder="Ваше имя"><br>
                 <input type="tel" placeholder="Ваш телефон"><br>
-                <input type="submit" value="Узнать стоимость" class='button modal-button'>
+                <input type="submit" value="Узнать стоимость" class='button modal-button wow tada delay-2s'>
             </form>
             <div class="modal__dialog-form_subscription">
                 Или Вы можете перезвонить нам сами <br> по телефону:
@@ -191,13 +193,13 @@
             Работая с 2007 года, <br> мы сделали более 500 ремонтов в квартирах и домах
         </h2>
         <div class="slider">
-            <div class="slider__item">
+            <div class="slider__item wow fadeInDown">
                 <img src="img/portfolio/slide1.png" alt="">
             </div>
-            <div class="slider__item">
+            <div data-wow-delay="0.2s" class="slider__item wow fadeInDown">
                 <img src="img/portfolio/slide2.png" alt="">
             </div>
-            <div class="slider__item">
+            <div data-wow-delay="0.4s" class="slider__item wow fadeInDown">
                 <img src="img/portfolio/slide3.png" alt="">
             </div>
             <div class="slider__item">
@@ -213,7 +215,132 @@
     </div>
 </section>  
 
+<section class="price">
+    <div class="container">
+        <h2 class="section-title_center section-title price-title">У нас очень гибкая система скидок <br>
+            на комплексные работы!</h2>
+        <h3 class="section-subtitle price-subtitle">Прайс на наши услуги</h3>
+        <div class="price-wrap">
+            <div class="card wow fadeInUp" data-wow-delay='0.2s'>
+                <div class="card__img-wrap">
+                <img src="img/price/price-1.png" alt="" class="card__img">
+                </div>
+                <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+                <a href="#" class="card__link">узнать цены</a>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay='0.4s'>
+                <div class="card__img-wrap">
+                <img src="img/price/price-2.png" alt="" class="card__img">
+                </div>
+                <h4 class="card__title">Ремонт комнат и квартир
+                </h4>
+                <a href="#" class="card__link">узнать цены</a>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay='0.6s'>
+                <div class="card__img-wrap">
+                <img src="img/price/price-3.png" alt="" class="card__img">
+                </div>
+                <h4 class="card__title">Отделка офисных помещений
+                </h4>
+                <a href="#" class="card__link">узнать цены</a>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay='0.2s'>
+                <div class="card__img-wrap">
+                <img src="img/price/price-4.png" alt="" class="card__img">
+                </div>
+                <h4 class="card__title">Ремонт в новостройках
+                </h4>
+                <a href="#" class="card__link">узнать цены</a>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay='0.4s'>
+                <div class="card__img-wrap">
+                <img src="img/price/price-5.png" alt="" class="card__img">
+                </div>
+                <h4 class="card__title">Ремонт кухонь</h4>
+                <a href="#" class="card__link">узнать цены</a>
+            </div>
+            <div class="card wow fadeInUp" data-wow-delay='0.6s'>
+                <div class="card__img-wrap">
+                <img src="img/price/price-6.png" alt="" class="card__img">
+                </div>
+                <h4 class="card__title">Ремонт дач и коттеджей
+                </h4>
+                <a href="#" class="card__link">узнать цены</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="count">
+    <div class="container">
+        <div class="section-title_center section-title count-title">
+            Наши специалисты готовы выехать на замер <br>
+            в любое удобное для Вас время
+        </div>
+        <div class="section-subtitle count-subtitle">
+            5 шагов до ремонта
+        </div>
+        <div class="count-wrap">
+            <div class="count-item">
+                <div class="count-item_img wow rollIn" data-wow-delay='0.4s'>
+                    <img src="img/count/count-1.png" alt="" class='count-image'>
+                </div>
+                <div class="count-item_subtitle">
+                    Вы звоните нам
+                    или оставляете заявку
+                </div>
+            </div>
+            <div class="count-item">
+                    <div class="count-item_img wow rollIn" data-wow-delay='0.6s'>
+                        <img src="img/count/count-2.png" alt="" class='count-image'>
+                    </div>
+                    <div class="count-item_subtitle">
+                            Согласуем удобное для&nbsp;Вас время выезда 
+                            специалиста на замер
+                            
+                    </div>
+                </div>
+                <div class="count-item">
+                        <div class="count-item_img wow rollIn" data-wow-delay='0.8s'>
+                            <img src="img/count/count-3.png" alt="" class='count-image'>
+                        </div>
+                        <div class="count-item_subtitle">
+                                Рассчитываем смету согласовываем с Вами
+                        </div>
+                    </div>
+                    <div class="count-item">
+                            <div class="count-item_img wow rollIn" data-wow-delay='1s'>
+                                <img src="img/count/count-4.png" alt="" class='count-image'>
+                            </div>
+                            <div class="count-item_subtitle">
+                                    Подписываем договор
+                                    закупаем материал
+                                    по оптовым ценам
+                            </div>
+                        </div>
+                        <div class="count-item">
+                                <div class="count-item_img wow rollIn" data-wow-delay='1.2s'>
+                                    <img src="img/count/count-5.png" alt="" class='count-image'>
+                                </div>
+                                <div class="count-item_subtitle">
+                                        Выполняем ремонт
+                                        в указанные сроки
+                                </div>
+                            </div>
+        </div>
+    </div>
+</section>
+
 <script src="slick.min.js"></script>
+
+<section class="title-block">
+    <div class="container">
+        <div class="section-title_center block-text">
+                Ремонт обойдется Вам дешевле, так как 
+                мы&nbsp;используем&nbsp;качественные&nbsp;материалы по оптовым ценам
+        </div>
+    </div>
+</section>
 
 <section class="request">
     <div class="container">
@@ -228,11 +355,11 @@
             </div>
             <div class="request-wrap-text_list">
                 <ol class='list'>
-                    <li class='request__item'>Какова площадь помещения?</li>
-                    <li class='request__item'>У Вас новостройка или вторичное жилье?</li>
-                    <li class='request__item'>Где находится помещение, в котором будет 
+                    <li class='request__item wow fadeInUp' data-wow-delay='0.4s'>Какова площадь помещения?</li>
+                    <li class='request__item wow fadeInUp' data-wow-delay='0.8s'>У Вас новостройка или вторичное жилье?</li>
+                    <li class='request__item wow fadeInUp' data-wow-delay='1.2s'>Где находится помещение, в котором будет 
                         производиться ремонт?</li>
-                    <li class='request__item'>Назначение помещения?</li>
+                    <li class='request__item wow fadeInUp' data-wow-delay='1.6s'>Назначение помещения?</li>
                 </ol>
             </div>
         </div>
@@ -246,8 +373,8 @@
             </div>
             <div class="request-wrap-form_input">
                 <form action="#" method="POST" class="ajax-submit">
-                    <input type="text" name='user_name' placeholder="Ваше имя" class='request-form'><br>
-                    <input type="tel" name='user_phone' placeholder="Ваш телефон" class='request-form'><br> 
+                    <input type="text" name='user_name' placeholder="Ваше имя" class='request-form' required><br>
+                    <input type="tel" name='user_phone' placeholder="Ваш телефон" class='request-form' required><br> 
                     <button type="submit" class='button request-form'>Рассчитать стоимость</button>
                 </form>
             </div>
