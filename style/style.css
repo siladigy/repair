@@ -1580,6 +1580,11 @@ li.request__item:before {
   font-family: 'Museo Sans Bold', sans-serif;
 }
 
+.contacts-phone {
+  text-decoration: none;
+  color: #000;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
