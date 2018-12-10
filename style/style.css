@@ -773,7 +773,9 @@ template {
 .modal-hr {
   width: 42px;
   height: 2px;
+  margin: 10px 0;
   background-color: #ffd200;
+  text-align: left;
   border: none;
 }
 
