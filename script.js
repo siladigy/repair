@@ -57,6 +57,3 @@ $(document).ready(function(){
 
 new WOW().init();
 
-document.querySelector('#button-callback').addEventListener('click', function(){
-    yaCounter51486145.reachGoal('btn'); return true;
-});
