@@ -4,9 +4,21 @@ $(document).ready(function(){
     });
     $('.modal__close').on('click', function(){
         $('#modal-callback').toggleClass('modal_visible');
-    });
-   
+    }); 
 });
+
+$(function(){
+    $("#phone").mask("7(999) 99-999-99");
+  });
+
+  $(function(){
+    $("#phone2").mask("7(999) 99-999-99");
+  });
+
+  $(function(){
+    $("#phone3").mask("7(999) 99-999-99");
+  });
+
 
 $(document).ready(function(){
   $('.slider').slick({

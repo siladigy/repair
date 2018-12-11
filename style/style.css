@@ -1696,7 +1696,7 @@ img {
   }
   .request-wrap-form {
     width: 100%;
-    padding-left: 10px;
+    padding-left: 0;
   }
   .request {
     background-size: 100% 100%;
@@ -1772,7 +1772,7 @@ img {
     margin-bottom: 80px;
   }
   .contract {
-    margin-bottom: 80px;
+    margin-bottom: 30px;
   }
   .contract__title {
     font-size: 20px;
@@ -1907,11 +1907,11 @@ img {
     min-width: 207px;
   }
   .request {
-    padding-top: 50px;
+    padding-top: 20px;
   }
   li.request__item {
     font-size: 14px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
     padding-left: 10px;
   }
   li.request__item:before {
@@ -1922,7 +1922,7 @@ img {
     border: 1px solid #000;
   }
   .request-wrap-text {
-    padding: 20px 10px;
+    padding: 10px 10px;
   }
   .request-wrap-text_title {
     font-size: 16px;
