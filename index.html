@@ -223,11 +223,18 @@
         <span class="close" onclick='offScript()'>&times;</span><br>
         <h3 class='modal1-title'>Заказать звонок</h3><br>
         <form action="#">
-            <input type="text" class="modal1" placeholder='Ваш e-mail'><br>
-            <input type="text" class="modal1" id="phone4" placeholder='Ваш телефон'>
-            <button type='submit' class="button modal1-btn">Заказать</button>
+            <input type="text" class="modal1" placeholder='Ваш e-mail' required><br>
+            <input type="text" class="modal1" id="phone4" placeholder='Ваш телефон' required>
+            <button type='submit' class="button modal1-btn" onclick="submitScript()">Заказать</button>
         </form>
 
+   </div>
+</div>
+
+<div class="modal" id="MyModal1">
+    <div class="modal1-content">
+        <span class="close" onclick='ofScript()'>&times;</span><br>
+        <h3 class='modal1-title'>Спасибо за заявку!</h3><br>
    </div>
 </div>
 

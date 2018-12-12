@@ -34,6 +34,18 @@ function offScript(){
     modal.style.display = 'none';
 };
 
+function submitScript(){
+    var modal = document.getElementById('MyModal')
+    modal.style.display = 'none';
+    var modal = document.getElementById('MyModal1')
+    modal.style.display = 'block';
+};
+
+function ofScript(){
+    var modal = document.getElementById('MyModal1')
+    modal.style.display = 'none';
+};
+
 
 $(document).ready(function(){
   $('.slider').slick({
