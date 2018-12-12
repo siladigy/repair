@@ -19,6 +19,21 @@ $(function(){
     $("#phone3").mask("7(999) 99-999-99");
   });
 
+  $(function(){
+    $("#phone4").mask("7(999) 99-999-99");
+  });
+
+
+function priceScript(){
+    var modal = document.getElementById('MyModal')
+    modal.style.display = "block";
+};
+
+function offScript(){
+    var modal = document.getElementById('MyModal')
+    modal.style.display = 'none';
+};
+
 
 $(document).ready(function(){
   $('.slider').slick({
@@ -59,7 +74,7 @@ $(document).ready(function(){
         data: $(this).serialize()
     }).done(function() {
         $(this).find("input").val("");
-        alert("Сообщение успешно отправлено");
+        alert("Спасибо. Ожидайте звонка");
         $(".ajax-submit").trigger("reset");
     });
     return false;
