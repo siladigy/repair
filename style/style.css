@@ -1696,6 +1696,9 @@ img {
     font-size: 18px;
     line-height: 35px;
   }
+  .modal1-content {
+    width: 350px;
+  }
   .count-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
